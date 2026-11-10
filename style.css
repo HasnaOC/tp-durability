@@ -1,4 +1,193 @@
 /* Feuille de style de la page « Le poids caché du web » */
-title {
-    color:rgb(46, 119, 174);
-}.
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background-color: #eaf8ff;
+    color: #36566b;
+    line-height: 1.8;
+}
+
+/* ============================= */
+/* EN-TÊTE */
+/* ============================= */
+
+header {
+    background: linear-gradient(135deg, #a9ddf5, #72c9e8);
+    text-align: center;
+    padding: 55px 20px;
+    border-bottom: 6px solid #c5efff;
+    border-radius: 0 0 35px 35px;
+    box-shadow: 0 5px 15px rgba(74, 156, 190, 0.15);
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 42px;
+    margin: 0 0 10px;
+    text-shadow: 2px 3px 5px rgba(48, 116, 145, 0.2);
+    letter-spacing: 1px;
+}
+
+header p {
+    color: #f4fcff;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* ============================= */
+/* CONTENU PRINCIPAL */
+/* ============================= */
+
+main {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+main > p {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 20px;
+    border-left: 6px solid #80d1ed;
+    box-shadow: 0 4px 15px rgba(87, 158, 187, 0.10);
+    margin-bottom: 30px;
+}
+
+/* ============================= */
+/* SECTIONS */
+/* ============================= */
+
+section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 25px 0;
+    border-radius: 22px;
+    border: 2px solid #d3f0fc;
+    box-shadow: 0 5px 15px rgba(87, 158, 187, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 22px rgba(87, 158, 187, 0.18);
+}
+
+section h2 {
+    color: #48a9ce;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 18px;
+    border-bottom: 2px dashed #b5e7f7;
+    padding-bottom: 10px;
+}
+
+section p {
+    font-size: 16px;
+}
+
+/* ============================= */
+/* IMAGE */
+/* ============================= */
+
+section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 25px auto;
+    border-radius: 18px;
+    border: 5px solid #e0f6ff;
+    box-shadow: 0 5px 15px rgba(65, 148, 179, 0.15);
+}
+
+/* ============================= */
+/* LIENS */
+/* ============================= */
+
+a {
+    color: #159fc5;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #08718f;
+    text-decoration: underline;
+}
+
+/* ============================= */
+/* TABLEAU */
+/* ============================= */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #c8ebf8;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #83d0ed;
+    color: #ffffff;
+    padding: 16px;
+    text-align: left;
+    font-size: 16px;
+}
+
+td {
+    padding: 15px;
+    border-top: 1px solid #d9f0f9;
+    background-color: #f7fcff;
+}
+
+tr:nth-child(even) td {
+    background-color: #eaf8ff;
+}
+
+tr:hover td {
+    background-color: #d8f2fc;
+    transition: background-color 0.3s ease;
+}
+
+/* ============================= */
+/* LISTE */
+/* ============================= */
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    padding: 5px 0;
+}
+
+li::marker {
+    color: #55b9df;
+}
+
+/* ============================= */
+/* PIED DE PAGE */
+/* ============================= */
+
+footer {
+    background: linear-gradient(135deg, #a9ddf5, #72c9e8);
+    text-align: center;
+    padding: 22px;
+    margin-top: 50px;
+    border-radius: 30px 30px 0 0;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 0;
+    font-weight: bold;
+}
