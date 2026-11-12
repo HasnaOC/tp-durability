@@ -7,7 +7,7 @@
 body {
     margin: 0; /* Supprime les marges extérieures ajoutées par défaut par le navigateur. */
     padding: 0; /* Supprime les espacements intérieurs par défaut de la page. */
-    font-family: "Trebuchet MS", Arial, sans-serif; /* Définit la police d'écriture utilisée sur tout le site. Si Trebuchet MS n'est pas disponible, Arial sera utilisée, puis une police sans-serif. */
+    font-family: "Trebuchet MS"; /* Définit la police d'écriture utilisée sur tout le site. */
     background-color: #eaf8ff; /* Définit la couleur de fond générale de la page avec un bleu très clair. */
     color: #36566b; /* Définit la couleur du texte principal en bleu-gris foncé. */
     line-height: 1.8; /* Augmente l'espace vertical entre les lignes de texte pour améliorer la lisibilité. */
@@ -178,4 +178,4 @@ footer p {
     font-weight: bold; /* Met le texte du pied de page en gras pour le rendre plus visible. */
 }
 
-/* code réalisé à l'aide de chatgpt */
+/* code réalisé à l'aide de ecogpt */
