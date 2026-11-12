@@ -178,4 +178,22 @@ footer p {
     font-weight: bold; /* Met le texte du pied de page en gras pour le rendre plus visible. */
 }
 
-/* code réalisé à l'aide de ecogpt */
+.outils {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  background-color: rgb(212, 9, 9);
+  border-radius: 8px;
+}
+
+body.sombre {
+background-color: #111c1b;
+color: #e2ebe9;
+}
+.sombre h2 {
+color: #7fd1c3;
+}
