@@ -18,7 +18,7 @@ body {
 
 
 header {
-    background: linear-gradient(135deg, #a9ddf5, #72c9e8); /* Crée un dégradé de bleu pastel orienté à 135 degrés. */
+    background: linear-gradient(135deg, #a9ddf5, hsl(196, 72%, 68%)); /* Crée un dégradé de bleu pastel orienté à 135 degrés. */
     text-align: center; /* Centre horizontalement tous les textes contenus dans l'en-tête. */
     padding: 55px 20px; /* Ajoute 55 pixels d'espace en haut et en bas, et 20 pixels à gauche et à droite. */
     border-bottom: 6px solid #c5efff; /* Ajoute une bordure inférieure de 6 pixels, continue et bleu très clair. */
@@ -186,7 +186,7 @@ footer p {
   flex-direction: column;
   gap: 6px;
   padding: 10px;
-  background-color: rgb(212, 9, 9);
+  background-color: hsl(197, 70%, 68%);
   border-radius: 8px;
 }
 

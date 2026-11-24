@@ -1,3 +1,5 @@
+/* mode sombre - mode clair */
+
 const boutonTheme = document.querySelector("#bouton-theme");
 
 boutonTheme.addEventListener("click", function () {
@@ -7,4 +9,14 @@ boutonTheme.addEventListener("click", function () {
   } else {
     boutonTheme.textContent = "Mode sombre"
   };
+});
+
+/* Curseur-taille */
+
+const curseur = document.querySelector("#curseur-taille");
+const valeurTaille = document.querySelector("#valeur-taille");
+
+curseur.addEventListener("input", function () {
+  document.body.style.fontSize = curseur.value + "%";
+  valeurTaille.textContent = curseur.value + "%";
 });
