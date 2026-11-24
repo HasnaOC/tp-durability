@@ -20,3 +20,16 @@ curseur.addEventListener("input", function () {
   document.body.style.fontSize = curseur.value + "%";
   valeurTaille.textContent = curseur.value + "%";
 });
+
+/* Le message de bienvenue */
+
+const heure = new Date().getHours();
+const salutation = document.querySelector("#salutation");
+
+if (heure <12) {
+  salutation.textContent = "Bonjour, bonne lecture !";
+} else if (heure <18) {
+  salutation.textContent = "Bon après-midi, bonne lecture !";
+} else {
+  salutation.textContent = "Bonsoir, bonne lecture !";
+}
