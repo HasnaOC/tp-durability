@@ -33,3 +33,30 @@ if (heure <12) {
 } else {
   salutation.textContent = "Bonsoir, bonne lecture !";
 }
+
+/* Poid navigation */
+
+const POIDS_PAGE_MO = 2;
+
+const champPages = document.querySelector("#pages-par-jour");
+const resultat = document.querySelector("#resultat");
+
+document.querySelector("#bouton-calculer").addEventListener("click", function () {
+  const pages = Number(champPages.value);
+  const parAn = pages * 365;
+  const poidsGo = Math.round(parAn * POIDS_PAGE_MO / 1000);
+
+  let message = "Environ " + poidsGo + " Go par an.";
+
+  if (poidsGo < 10) {
+    message = message + " C'est raisonnable.";
+  } else if (poidsGo < 50) {
+    message = message + " C'est déjà beaucoup.";
+  } else {
+    message = message + " C'est énorme !";
+  }
+
+  message = message + " Et ce ne sont que des pages : les vidéos pèsent beaucoup plus.";
+
+  resultat.textContent = message;
+});
